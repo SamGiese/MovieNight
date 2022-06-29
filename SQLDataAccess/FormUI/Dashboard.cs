@@ -94,5 +94,12 @@ namespace FormUI
         {
 
         }
+
+        private void RemoveButton_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            db.RemoveMovie(RandomMovieListBox.Text);
+
+        }
     }
 }

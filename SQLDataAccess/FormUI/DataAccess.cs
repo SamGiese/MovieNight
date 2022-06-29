@@ -85,5 +85,38 @@ namespace FormUI
             }
 
         }
+
+
+
+        public void RemoveMovie(string MovieName)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieNight")))
+            {
+                //Person newPerson = new Person { FirstName = FirstName, LastName = LastName, EmailAddress = EmailAddress};
+
+                List<Movie> movie = new List<Movie>();
+
+                movie.Add(new Movie { MovieName = MovieName });
+
+                //people is a list of Person. In each person you have the parameters @FirstName, @LastName, @EmailAddress
+                //MUST CHANGE: Person.spPerson_GetInfo to a new stored procedure that is like dbo.People_Insert from Sample DB
+                connection.Execute("dbo.Movies_spRemoveMovie @MovieName", movie);
+
+
+
+                /*
+                 @MovieName nvarchar(max)
+                AS
+                BEGIN
+                SET NOCOUNT ON;
+                insert into dbo.Movies(MovieName)
+                values (@MovieName);
+                END
+                   */
+
+
+            }
+
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.MovieNameInsertLabel = new System.Windows.Forms.Label();
             this.MovieNameInsertText = new System.Windows.Forms.TextBox();
             this.InsertRecordButton = new System.Windows.Forms.Button();
+            this.RemoveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RandomMovieListBox
@@ -85,11 +86,22 @@
             this.InsertRecordButton.UseVisualStyleBackColor = true;
             this.InsertRecordButton.Click += new System.EventHandler(this.InsertRecordButton_Click);
             // 
+            // RemoveButton
+            // 
+            this.RemoveButton.Location = new System.Drawing.Point(841, 85);
+            this.RemoveButton.Name = "RemoveButton";
+            this.RemoveButton.Size = new System.Drawing.Size(100, 35);
+            this.RemoveButton.TabIndex = 13;
+            this.RemoveButton.Text = "Remove";
+            this.RemoveButton.UseVisualStyleBackColor = true;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.InsertRecordButton);
             this.Controls.Add(this.MovieNameInsertLabel);
             this.Controls.Add(this.MovieNameInsertText);
@@ -111,6 +123,7 @@
         private System.Windows.Forms.Label MovieNameInsertLabel;
         private System.Windows.Forms.TextBox MovieNameInsertText;
         private System.Windows.Forms.Button InsertRecordButton;
+        private System.Windows.Forms.Button RemoveButton;
     }
 }
 
