@@ -31,22 +31,24 @@
             this.RandomMovieListBox = new System.Windows.Forms.ListBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.MovieNameInsertLabel = new System.Windows.Forms.Label();
-            this.FirstNameInsertText = new System.Windows.Forms.TextBox();
+            this.MovieNameInsertText = new System.Windows.Forms.TextBox();
             this.InsertRecordButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RandomMovieListBox
             // 
+            this.RandomMovieListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.RandomMovieListBox.FormattingEnabled = true;
-            this.RandomMovieListBox.ItemHeight = 20;
+            this.RandomMovieListBox.ItemHeight = 31;
             this.RandomMovieListBox.Location = new System.Drawing.Point(425, 85);
             this.RandomMovieListBox.Name = "RandomMovieListBox";
-            this.RandomMovieListBox.Size = new System.Drawing.Size(384, 44);
+            this.RandomMovieListBox.Size = new System.Drawing.Size(384, 35);
             this.RandomMovieListBox.TabIndex = 0;
             this.RandomMovieListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // SearchButton
             // 
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.SearchButton.Location = new System.Drawing.Point(547, 51);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(143, 28);
@@ -65,13 +67,13 @@
             this.MovieNameInsertLabel.Text = "Movie Name:";
             this.MovieNameInsertLabel.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // FirstNameInsertText
+            // MovieNameInsertText
             // 
-            this.FirstNameInsertText.Location = new System.Drawing.Point(930, 564);
-            this.FirstNameInsertText.Name = "FirstNameInsertText";
-            this.FirstNameInsertText.Size = new System.Drawing.Size(113, 26);
-            this.FirstNameInsertText.TabIndex = 4;
-            this.FirstNameInsertText.TextChanged += new System.EventHandler(this.FirstNameInsertText_TextChanged);
+            this.MovieNameInsertText.Location = new System.Drawing.Point(930, 564);
+            this.MovieNameInsertText.Name = "MovieNameInsertText";
+            this.MovieNameInsertText.Size = new System.Drawing.Size(113, 26);
+            this.MovieNameInsertText.TabIndex = 4;
+            this.MovieNameInsertText.TextChanged += new System.EventHandler(this.FirstNameInsertText_TextChanged);
             // 
             // InsertRecordButton
             // 
@@ -90,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.InsertRecordButton);
             this.Controls.Add(this.MovieNameInsertLabel);
-            this.Controls.Add(this.FirstNameInsertText);
+            this.Controls.Add(this.MovieNameInsertText);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.RandomMovieListBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -107,7 +109,7 @@
         private System.Windows.Forms.ListBox RandomMovieListBox;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Label MovieNameInsertLabel;
-        private System.Windows.Forms.TextBox FirstNameInsertText;
+        private System.Windows.Forms.TextBox MovieNameInsertText;
         private System.Windows.Forms.Button InsertRecordButton;
     }
 }
