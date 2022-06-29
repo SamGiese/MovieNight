@@ -12,3 +12,17 @@ C:\Users\samgi\source\repos\SQLDataAccess\FormUI\bin\Debug\Dapper.xml
 C:\Users\samgi\source\repos\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.CopyComplete
 C:\Users\samgi\source\repos\SQLDataAccess\FormUI\obj\Debug\FormUI.exe
 C:\Users\samgi\source\repos\SQLDataAccess\FormUI\obj\Debug\FormUI.pdb
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.AssemblyReference.cache
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.Dashboard.resources
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.Properties.Resources.resources
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.GenerateResource.cache
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.CoreCompileInputs.cache
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.exe
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.pdb
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\FormUI.exe.config
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\FormUI.exe
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\FormUI.pdb
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\Dapper.dll
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\Dapper.xml
+C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.CopyComplete

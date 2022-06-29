@@ -58,7 +58,7 @@
     </Compile>
     <Compile Include="DataAccess.cs" />
     <Compile Include="Helper.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">

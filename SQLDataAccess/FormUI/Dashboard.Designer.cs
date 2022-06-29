@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.PeopleFoundListBox = new System.Windows.Forms.ListBox();
-            this.LastNameText = new System.Windows.Forms.TextBox();
-            this.LastNameLabel = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
             this.FirstNameInsertLabel = new System.Windows.Forms.Label();
             this.FirstNameInsertText = new System.Windows.Forms.TextBox();
@@ -41,6 +39,8 @@
             this.InsertRecordButton = new System.Windows.Forms.Button();
             this.PersonTypeInsertLabel = new System.Windows.Forms.Label();
             this.PersonTypeInsertText = new System.Windows.Forms.TextBox();
+            this.LastNameText = new System.Windows.Forms.TextBox();
+            this.LastNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // PeopleFoundListBox
@@ -52,24 +52,6 @@
             this.PeopleFoundListBox.Size = new System.Drawing.Size(316, 204);
             this.PeopleFoundListBox.TabIndex = 0;
             this.PeopleFoundListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // LastNameText
-            // 
-            this.LastNameText.Location = new System.Drawing.Point(110, 12);
-            this.LastNameText.Name = "LastNameText";
-            this.LastNameText.Size = new System.Drawing.Size(100, 26);
-            this.LastNameText.TabIndex = 1;
-            this.LastNameText.TextChanged += new System.EventHandler(this.LastNameText_TextChanged);
-            // 
-            // LastNameLabel
-            // 
-            this.LastNameLabel.AutoSize = true;
-            this.LastNameLabel.Location = new System.Drawing.Point(18, 15);
-            this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(86, 20);
-            this.LastNameLabel.TabIndex = 2;
-            this.LastNameLabel.Text = "Last Name";
-            this.LastNameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // SearchButton
             // 
@@ -157,6 +139,24 @@
             this.PersonTypeInsertText.Size = new System.Drawing.Size(113, 26);
             this.PersonTypeInsertText.TabIndex = 13;
             // 
+            // LastNameText
+            // 
+            this.LastNameText.Location = new System.Drawing.Point(110, 12);
+            this.LastNameText.Name = "LastNameText";
+            this.LastNameText.Size = new System.Drawing.Size(100, 26);
+            this.LastNameText.TabIndex = 1;
+            this.LastNameText.TextChanged += new System.EventHandler(this.LastNameText_TextChanged);
+            // 
+            // LastNameLabel
+            // 
+            this.LastNameLabel.AutoSize = true;
+            this.LastNameLabel.Location = new System.Drawing.Point(18, 15);
+            this.LastNameLabel.Name = "LastNameLabel";
+            this.LastNameLabel.Size = new System.Drawing.Size(86, 20);
+            this.LastNameLabel.TabIndex = 2;
+            this.LastNameLabel.Text = "Last Name";
+            this.LastNameLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -187,8 +187,6 @@
         #endregion
 
         private System.Windows.Forms.ListBox PeopleFoundListBox;
-        private System.Windows.Forms.TextBox LastNameText;
-        private System.Windows.Forms.Label LastNameLabel;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Label FirstNameInsertLabel;
         private System.Windows.Forms.TextBox FirstNameInsertText;
@@ -199,6 +197,8 @@
         private System.Windows.Forms.Button InsertRecordButton;
         private System.Windows.Forms.Label PersonTypeInsertLabel;
         private System.Windows.Forms.TextBox PersonTypeInsertText;
+        private System.Windows.Forms.TextBox LastNameText;
+        private System.Windows.Forms.Label LastNameLabel;
     }
 }
 

@@ -12,7 +12,7 @@ namespace FormUI
 {
     public partial class Dashboard : Form
     {
-        List<Person> people = new List<Person>();
+        List<Movie> people = new List<Movie>();
 
 
 
@@ -68,12 +68,10 @@ namespace FormUI
         {
             DataAccess db = new DataAccess();
 
-            db.InsertPerson(FirstNameInsertText.Text, LastNameInsertText.Text, BusinessEntityIDInsertText.Text, PersonTypeInsertText.Text);
+            db.InsertPerson(FirstNameInsertText.Text);
 
             FirstNameInsertText.Text = "";
-            LastNameInsertText.Text = "";
-            BusinessEntityIDInsertText.Text = "";
-            PersonTypeInsertText.Text = "";
+            
             
 
         }
