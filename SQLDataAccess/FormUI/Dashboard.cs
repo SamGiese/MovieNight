@@ -12,7 +12,7 @@ namespace FormUI
 {
     public partial class Dashboard : Form
     {
-        List<Movie> people = new List<Movie>();
+        List<Movie> movies = new List<Movie>();
 
 
 
@@ -37,7 +37,7 @@ namespace FormUI
         {
 
             //Fill out PeopleFoundListBox with the data pulled into the people list. This will populate the large text box
-            PeopleFoundListBox.DataSource = people;
+            PeopleFoundListBox.DataSource = movies;
             PeopleFoundListBox.DisplayMember = "FullInfo";
 
         }
@@ -47,7 +47,7 @@ namespace FormUI
             DataAccess db = new DataAccess();
 
             //pull value from text box on the form
-            people =  db.GetPeople(LastNameText.Text);
+            movies =  db.GetMovie(LastNameText.Text);
 
 
             UpdateBinding();

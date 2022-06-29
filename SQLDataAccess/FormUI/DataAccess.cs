@@ -11,7 +11,7 @@ namespace FormUI
     public class DataAccess
     {
         //Output is a list of type Person, referencing the Person.cs class, with all of the properties that match up with it
-        public List<Movie> GetPeople(string MovieName)
+        public List<Movie> GetMovie(string MovieName)
         {
             //The line below allows us to compile the application while working on it
             //throw new NotImplementedException();
