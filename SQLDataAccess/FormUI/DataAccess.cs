@@ -11,7 +11,7 @@ namespace FormUI
     public class DataAccess
     {
         //Output is a list of type Person, referencing the Person.cs class, with all of the properties that match up with it
-        public List<Movie> GetMovie(string MovieName)
+        public List<Movie> GetMovie()
         {
             //The line below allows us to compile the application while working on it
             //throw new NotImplementedException();
@@ -21,7 +21,7 @@ namespace FormUI
             {
                 //Calls on the stored procedure Person.spPerson_GetInfo & takes in the parameter @LastName
                 // new { LastName = lastName } - Dynamic class to take in the input lastName, & places it inside the @LastName parameter
-                var output = connection.Query<Movie>("dbo.Movies_GetMovie", new { MovieName = MovieName }).ToList();
+                var output = connection.Query<Movie>("dbo.Movies_GetMovie").ToList();
                 return output;
 
                 /*

@@ -47,7 +47,7 @@ namespace FormUI
             DataAccess db = new DataAccess();
 
             //pull value from text box on the form
-            movies =  db.GetMovie(LastNameText.Text);
+            movies =  db.GetMovie();
 
 
             UpdateBinding();
