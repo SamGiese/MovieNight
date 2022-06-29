@@ -37,8 +37,8 @@ namespace FormUI
         {
 
             //Fill out PeopleFoundListBox with the data pulled into the people list. This will populate the large text box
-            PeopleFoundListBox.DataSource = movies;
-            PeopleFoundListBox.DisplayMember = "FullInfo";
+            RandomMovieListBox.DataSource = movies;
+            RandomMovieListBox.DisplayMember = "FullInfo";
 
         }
 
@@ -68,7 +68,7 @@ namespace FormUI
         {
             DataAccess db = new DataAccess();
 
-            db.InsertPerson(FirstNameInsertText.Text);
+            db.InsertMovie(FirstNameInsertText.Text);
 
             FirstNameInsertText.Text = "";
             
@@ -91,6 +91,9 @@ namespace FormUI
             */
         }
 
-       
+        private void FirstNameInsertText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
