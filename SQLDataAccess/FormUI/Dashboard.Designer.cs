@@ -38,30 +38,31 @@
             // 
             // RandomMovieListBox
             // 
-            this.RandomMovieListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.RandomMovieListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.RandomMovieListBox.FormattingEnabled = true;
-            this.RandomMovieListBox.ItemHeight = 31;
-            this.RandomMovieListBox.Location = new System.Drawing.Point(425, 85);
+            this.RandomMovieListBox.ItemHeight = 46;
+            this.RandomMovieListBox.Location = new System.Drawing.Point(237, 75);
             this.RandomMovieListBox.Name = "RandomMovieListBox";
-            this.RandomMovieListBox.Size = new System.Drawing.Size(384, 35);
+            this.RandomMovieListBox.Size = new System.Drawing.Size(410, 50);
             this.RandomMovieListBox.TabIndex = 0;
             this.RandomMovieListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // SearchButton
             // 
+            this.SearchButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.SearchButton.Location = new System.Drawing.Point(547, 51);
+            this.SearchButton.Location = new System.Drawing.Point(394, 28);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(143, 28);
+            this.SearchButton.Size = new System.Drawing.Size(171, 41);
             this.SearchButton.TabIndex = 3;
             this.SearchButton.Text = "Pick Movie";
-            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.UseVisualStyleBackColor = false;
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // MovieNameInsertLabel
             // 
             this.MovieNameInsertLabel.AutoSize = true;
-            this.MovieNameInsertLabel.Location = new System.Drawing.Point(824, 567);
+            this.MovieNameInsertLabel.Location = new System.Drawing.Point(674, 386);
             this.MovieNameInsertLabel.Name = "MovieNameInsertLabel";
             this.MovieNameInsertLabel.Size = new System.Drawing.Size(100, 20);
             this.MovieNameInsertLabel.TabIndex = 5;
@@ -70,7 +71,7 @@
             // 
             // MovieNameInsertText
             // 
-            this.MovieNameInsertText.Location = new System.Drawing.Point(930, 564);
+            this.MovieNameInsertText.Location = new System.Drawing.Point(780, 383);
             this.MovieNameInsertText.Name = "MovieNameInsertText";
             this.MovieNameInsertText.Size = new System.Drawing.Size(113, 26);
             this.MovieNameInsertText.TabIndex = 4;
@@ -78,29 +79,33 @@
             // 
             // InsertRecordButton
             // 
-            this.InsertRecordButton.Location = new System.Drawing.Point(886, 596);
+            this.InsertRecordButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.InsertRecordButton.Location = new System.Drawing.Point(736, 415);
             this.InsertRecordButton.Name = "InsertRecordButton";
             this.InsertRecordButton.Size = new System.Drawing.Size(75, 28);
             this.InsertRecordButton.TabIndex = 12;
             this.InsertRecordButton.Text = "Insert";
-            this.InsertRecordButton.UseVisualStyleBackColor = true;
+            this.InsertRecordButton.UseVisualStyleBackColor = false;
             this.InsertRecordButton.Click += new System.EventHandler(this.InsertMovieButton_Click);
             // 
             // RemoveButton
             // 
-            this.RemoveButton.Location = new System.Drawing.Point(841, 85);
+            this.RemoveButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RemoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.RemoveButton.Location = new System.Drawing.Point(653, 75);
             this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Size = new System.Drawing.Size(100, 35);
+            this.RemoveButton.Size = new System.Drawing.Size(130, 50);
             this.RemoveButton.TabIndex = 13;
             this.RemoveButton.Text = "Remove";
-            this.RemoveButton.UseVisualStyleBackColor = true;
+            this.RemoveButton.UseVisualStyleBackColor = false;
             this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(992, 480);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.InsertRecordButton);
             this.Controls.Add(this.MovieNameInsertLabel);
