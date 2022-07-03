@@ -66,7 +66,7 @@
             this.MovieNameInsertLabel.Size = new System.Drawing.Size(100, 20);
             this.MovieNameInsertLabel.TabIndex = 5;
             this.MovieNameInsertLabel.Text = "Movie Name:";
-            this.MovieNameInsertLabel.Click += new System.EventHandler(this.label1_Click_1);
+            this.MovieNameInsertLabel.Click += new System.EventHandler(this.InsertLabelClick);
             // 
             // MovieNameInsertText
             // 
@@ -74,7 +74,7 @@
             this.MovieNameInsertText.Name = "MovieNameInsertText";
             this.MovieNameInsertText.Size = new System.Drawing.Size(113, 26);
             this.MovieNameInsertText.TabIndex = 4;
-            this.MovieNameInsertText.TextChanged += new System.EventHandler(this.FirstNameInsertText_TextChanged);
+            this.MovieNameInsertText.TextChanged += new System.EventHandler(this.MovieNameInsertText_TextChanged);
             // 
             // InsertRecordButton
             // 
@@ -84,7 +84,7 @@
             this.InsertRecordButton.TabIndex = 12;
             this.InsertRecordButton.Text = "Insert";
             this.InsertRecordButton.UseVisualStyleBackColor = true;
-            this.InsertRecordButton.Click += new System.EventHandler(this.InsertRecordButton_Click);
+            this.InsertRecordButton.Click += new System.EventHandler(this.InsertMovieButton_Click);
             // 
             // RemoveButton
             // 

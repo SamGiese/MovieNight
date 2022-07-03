@@ -12,6 +12,7 @@ namespace FormUI
 {
     public partial class Dashboard : Form
     {
+        //movies is the movie it pulls from the MovieNight DB. Keeping as a list for now.
         List<Movie> movies = new List<Movie>();
 
 
@@ -33,37 +34,35 @@ namespace FormUI
 
         }
 
+
+        //Fill out RandomMovieListBox with the data pulled into the movies list. This will populate the text box with a random movie.
         private void UpdateBinding()
         {
-
-            //Fill out PeopleFoundListBox with the data pulled into the people list. This will populate the large text box
             RandomMovieListBox.DataSource = movies;
             RandomMovieListBox.DisplayMember = "FullInfo";
         }
 
+
+
+        //On click, creates an item of DataAcess type & then uses the GetMovie method to fill it
         private void SearchButton_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
-
-            //pull value from text box on the form
             movies =  db.GetMovie();
-
-
             UpdateBinding();
-
         }
 
-        private void LastNameText_TextChanged(object sender, EventArgs e)
+        
+
+        private void InsertLabelClick(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
 
-        }
-
-        private void InsertRecordButton_Click(object sender, EventArgs e)
+        //On click, creates an item of DataAcess type & uses the InsertMovie method to insert a record into the MovieNight DB
+        //with the string/nvarchar inside MovieNameInsertText.Text
+        private void InsertMovieButton_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
 
@@ -71,30 +70,17 @@ namespace FormUI
 
             MovieNameInsertText.Text = "";
             
-            
-
         }
 
-        private void BusinessEntityIDInsertText_TextChanged(object sender, EventArgs e)
-        {
-            /*
-            int value;
-            if (int.TryParse(PersonTypeInsertText.Text, out value))
-            {
-                //parsing successful
-            }
-            else
-            {
-                //parsing failed
-            }
-            */
-        }
+        
 
-        private void FirstNameInsertText_TextChanged(object sender, EventArgs e)
+        private void MovieNameInsertText_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+        //On click, creates an item of DataAcess type & uses the RemoveMovie method to remove any instances
+        //of the movie that is currently occupying RandomMovieListBox
         private void RemoveButton_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
