@@ -34,6 +34,8 @@
             this.MovieNameInsertText = new System.Windows.Forms.TextBox();
             this.InsertRecordButton = new System.Windows.Forms.Button();
             this.RemoveButton = new System.Windows.Forms.Button();
+            this.MoviesListBox = new System.Windows.Forms.ListBox();
+            this.ShowAllButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RandomMovieListBox
@@ -100,12 +102,36 @@
             this.RemoveButton.UseVisualStyleBackColor = false;
             this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
+            // MoviesListBox
+            // 
+            this.MoviesListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.MoviesListBox.FormattingEnabled = true;
+            this.MoviesListBox.ItemHeight = 20;
+            this.MoviesListBox.Location = new System.Drawing.Point(23, 272);
+            this.MoviesListBox.Name = "MoviesListBox";
+            this.MoviesListBox.Size = new System.Drawing.Size(288, 204);
+            this.MoviesListBox.TabIndex = 14;
+            // 
+            // ShowAllButton
+            // 
+            this.ShowAllButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ShowAllButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.ShowAllButton.Location = new System.Drawing.Point(75, 225);
+            this.ShowAllButton.Name = "ShowAllButton";
+            this.ShowAllButton.Size = new System.Drawing.Size(171, 41);
+            this.ShowAllButton.TabIndex = 15;
+            this.ShowAllButton.Text = "Show All";
+            this.ShowAllButton.UseVisualStyleBackColor = false;
+            this.ShowAllButton.Click += new System.EventHandler(this.ShowAllButton_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(992, 480);
+            this.Controls.Add(this.ShowAllButton);
+            this.Controls.Add(this.MoviesListBox);
             this.Controls.Add(this.RemoveButton);
             this.Controls.Add(this.InsertRecordButton);
             this.Controls.Add(this.MovieNameInsertLabel);
@@ -129,6 +155,8 @@
         private System.Windows.Forms.TextBox MovieNameInsertText;
         private System.Windows.Forms.Button InsertRecordButton;
         private System.Windows.Forms.Button RemoveButton;
+        private System.Windows.Forms.ListBox MoviesListBox;
+        private System.Windows.Forms.Button ShowAllButton;
     }
 }
 

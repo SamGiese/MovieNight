@@ -43,6 +43,8 @@ namespace FormUI
         }
 
 
+        
+
 
         //On click, creates an item of DataAcess type & then uses the GetMovie method to fill it
         private void SearchButton_Click(object sender, EventArgs e)
@@ -52,7 +54,28 @@ namespace FormUI
             UpdateBinding();
         }
 
-        
+
+
+
+
+
+        private void UpdateBindingList()
+        {
+            MoviesListBox.DataSource = movies;
+            MoviesListBox.DisplayMember = "FullInfo";
+        }
+
+        private void ShowAllButton_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            movies = db.GetMovieList();
+            UpdateBindingList();
+        }
+
+
+
+
+
 
         private void InsertLabelClick(object sender, EventArgs e)
         {
@@ -87,5 +110,7 @@ namespace FormUI
             db.RemoveMovie(RandomMovieListBox.Text);
 
         }
+
+        
     }
 }

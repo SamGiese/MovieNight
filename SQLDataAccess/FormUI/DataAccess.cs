@@ -113,5 +113,48 @@ namespace FormUI
             }
 
         }
+
+
+         //Output is a list of type Movie, referencing the Movie.cs class, with all of the properties that match up with it
+        public List<Movie> GetMovieList()
+        {
+            //The line below allows us to compile the application while working on it
+            //throw new NotImplementedException();
+
+            //Opens a connection to the SQL server. Once it exits these brackets, the door to the db closes
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieNight")))
+            {
+                //Calls on the stored procedure dbo.Movies_GetMovie that returns a random MovieName
+                var output = connection.Query<Movie>("dbo.Movies_GetList").ToList();
+                return output;
+
+                /*
+                 * Stored Procedure dbo.Movies_GetList
+                 * 
+                 * AS
+                   SELECT TOP 500 MovieName
+                   FROM Movies
+                   ORDER BY MovieName ASC
+                 */
+
+
+
+
+                /*
+                 * This block here is straight SQL. Bad practice & is susceptible to SQL injection - Keeping around for example
+                //asks for data back <the data you want back> (SELECT statement to run. use this for now until we pull in stored procedure)
+                var output = connection.Query<Person>($"select * from Person.Person where LastName = '{ lastName }'").ToList();
+                return output;
+                */
+
+
+
+            }
+
+        }
+
+
+
+
     }
 }
