@@ -141,7 +141,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
-            this.Text = "SQL Data Access Demo";
+            this.Text = "Movie Night";
             this.ResumeLayout(false);
             this.PerformLayout();
 
