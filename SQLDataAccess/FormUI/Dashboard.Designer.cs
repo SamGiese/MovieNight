@@ -107,7 +107,7 @@
             this.MoviesListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.MoviesListBox.FormattingEnabled = true;
             this.MoviesListBox.ItemHeight = 20;
-            this.MoviesListBox.Location = new System.Drawing.Point(23, 272);
+            this.MoviesListBox.Location = new System.Drawing.Point(27, 257);
             this.MoviesListBox.Name = "MoviesListBox";
             this.MoviesListBox.Size = new System.Drawing.Size(288, 204);
             this.MoviesListBox.TabIndex = 14;
@@ -116,7 +116,7 @@
             // 
             this.ShowAllButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ShowAllButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.ShowAllButton.Location = new System.Drawing.Point(75, 225);
+            this.ShowAllButton.Location = new System.Drawing.Point(79, 210);
             this.ShowAllButton.Name = "ShowAllButton";
             this.ShowAllButton.Size = new System.Drawing.Size(171, 41);
             this.ShowAllButton.TabIndex = 15;

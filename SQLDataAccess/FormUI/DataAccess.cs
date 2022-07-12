@@ -124,7 +124,7 @@ namespace FormUI
             //Opens a connection to the SQL server. Once it exits these brackets, the door to the db closes
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieNight")))
             {
-                //Calls on the stored procedure dbo.Movies_GetMovie that returns a random MovieName
+                //Calls on the stored procedure dbo.Movies_GetList that returns a list of the top 500 movies in the database
                 var output = connection.Query<Movie>("dbo.Movies_GetList").ToList();
                 return output;
 
