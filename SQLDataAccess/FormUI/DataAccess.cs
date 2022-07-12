@@ -59,11 +59,18 @@ namespace FormUI
 
                 List<Movie> movie = new List<Movie>();
 
-                movie.Add(new Movie { MovieName = MovieName});
+                //varchar has max character length of 50. This exception will not allow the user to input a movie name greater than 50 characters
+                if (MovieName.Length > 50)
+                {
+                    
+                }
+                else
+                {
+                    movie.Add(new Movie { MovieName = MovieName });
 
-                connection.Execute("dbo.Movies_spInsertMovie @MovieName", movie);
+                    connection.Execute("dbo.Movies_spInsertMovie @MovieName", movie);
 
-
+                }
 
                 /*
                  * Stored Procedure dbo.Movies_spInsertMovie
