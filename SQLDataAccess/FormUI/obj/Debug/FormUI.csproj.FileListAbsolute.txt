@@ -26,3 +26,7 @@ C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\FormUI.pdb
 C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\Dapper.dll
 C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\Dapper.xml
 C:\Users\samgi\Source\Repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.csproj.CopyComplete
+C:\Users\samgi\source\repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\FormUI.exe.manifest
+C:\Users\samgi\source\repos\MovieNight\SQLDataAccess\FormUI\bin\Debug\FormUI.application
+C:\Users\samgi\source\repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.exe.manifest
+C:\Users\samgi\source\repos\MovieNight\SQLDataAccess\FormUI\obj\Debug\FormUI.application
