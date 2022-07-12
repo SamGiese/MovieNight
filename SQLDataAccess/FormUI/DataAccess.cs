@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Dapper;
 
 namespace FormUI
@@ -69,9 +70,14 @@ namespace FormUI
                     connection.Execute("dbo.Movies_spInsertMovie @MovieName", movie);
                 }
 
-                catch
+                catch(System.Data.SqlClient.SqlException ex)
                 {
+                    MessageBox.Show("The movie name you entered in was too long. Maximum character length is 50.");
+                }
 
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
                 }
 
 
